@@ -1,0 +1,112 @@
+name: Gotlin SDK Issue
+description: Report bugs, request features, or raise documentation issues for the StarkK SDK.
+title: "[Gotlin] "
+labels: ["sdk", "triage"]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: Choose the type that best matches your report.
+      options:
+        - Bug report
+        - Feature request
+        - Documentation issue
+        - Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A clear and concise description of the issue.
+      placeholder: Describe the problem or request.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Share the environment details below.
+      placeholder: |
+        SDK module version/commit:
+        Android Gradle Plugin version:
+        Kotlin version:
+        Device/Emulator + Android version:
+        API endpoint involved (characters/houses/books):
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: List exact steps so maintainers can reproduce quickly.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      placeholder: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      placeholder: What actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Stacktrace
+      description: Paste relevant logs or stack trace.
+      render: text
+      placeholder: <logs here>
+    validations:
+      required: false
+
+  - type: textarea
+    id: minimal_reproduction
+    attributes:
+      label: Minimal Reproduction
+      description: Provide a small snippet showing the failing or unexpected call.
+      render: kotlin
+      placeholder: |
+    
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add screenshots, payload samples, or anything useful for debugging.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues first
+          required: true
+        - label: I included clear steps to reproduce the issue
+          required: false
+        - label: I included logs/stack trace where applicable
+          required: false
+        - label: I removed sensitive data from logs and samples
+          required: true
+
