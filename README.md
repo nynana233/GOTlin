@@ -1,4 +1,6 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# GOTlin — Kotlin Multiplatform SDK for An API of Ice And Fire
+
+A production-ready **KMP-first Android SDK** for [An API of Ice And Fire](https://anapioficeandfire.com/), targeting Android and iOS.
 
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
